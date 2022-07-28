@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip</title>
+
+  <style>
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(64, 64, 65);
+
+      font-size: 2rem;
+    }
+    /* Tooltip Container */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted rgb(76, 76, 77);
+      cursor: pointer;
+
+    }
+    
+    /* Tooltip Text */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      min-width: 15rem;
+      background-color: rgb(63, 62, 62);
+      color: #fff;
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 6px;
+     
+      /* Tooltipbox Positionieren */
+      position: absolute;
+      left: 0rem;
+      top: -3.5rem;
+      z-index: 1;
+    }
+    
+    /* Tooltip Sichtbarkeit */
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+    </style>
+
+</head>
+<body>
+
+  <div class="tooltip">Hover mich
+    <span class="tooltiptext">Ich bin ein Tooltip</span>
+  </div>
+  
+</body>
+</html>
