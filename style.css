@@ -25,7 +25,7 @@ body {
   font-family: Notoserif, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.7rem; /* Einheiten */
+  line-height: 1.7rem; /* Einheiten können auch vergeben werden */
 }
 
 p {
