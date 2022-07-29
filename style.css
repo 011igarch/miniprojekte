@@ -47,11 +47,6 @@ h2 {
   margin-bottom: 3vh;
 }
 
-div {
-  width: 75vw;
-  margin-right: 2vw;
-}
-
 .container {
   display: flex;
   margin-bottom: 10vh;
@@ -124,6 +119,10 @@ main {
   height: 70vh;
   overflow: auto; /* Browser überprüft welcher  Scrollbalken benötigt wird */
 
+}
+
+.col {
+  margin-right: 3vw;
 }
 
 main > :last-child {
