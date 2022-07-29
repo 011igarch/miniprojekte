@@ -16,19 +16,122 @@
       font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
+  margin: auto;
 }
 
 body {
-  margin: 0;
   font-family: Notoserif, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.7rem; /* Einheiten können auch vergeben werden */
+  font-weight: 400;
+  font-size: 1vw; 
+  line-height: 1.7vw; /* Einheiten können auch vergeben werden */
+  color: #333;
 }
+
+::selection {
+  background-color: #FEB9A2;
+  color: white;
+}
+
+.content-box {
+  padding: 5vh 10vw;
+}
+h2 {
+  margin-bottom: 3vh;
+}
+
+div {
+  width: 75vw;
+  margin-right: 2vw;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 10vh;
+}
+
 
 p {
   font-family: Notoserif, Arial, Helvetica, sans-serif;
   font-weight: normal;
+}
+
+#open {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  
+  color: white;
+  font-weight: bold;
+}
+
+#main__nav {
+  background-color: #FEB9A2;
+  color: white;
+  height: 100vh;
+  width: 19vw;
+  position: absolute;
+  margin-left: -16vw;
+  box-shadow: 0 1vw 6vw rgba(0, 0, 0, 0.3);
+  transition: margin .25s ease-out;
+  padding: 3vw;
+}
+
+#main__nav:hover {
+  margin-left: 0;
+}
+
+#main__nav ul {
+  list-style-type: none;
+}
+
+#main__nav li {
+  margin-bottom: 1vw;
+  padding-bottom: 1vw;
+  border-bottom: .1vw solid rgb(255, 255, 255);
+}
+
+#main__nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1vw;
+  transition: color .25s linear;
+}
+
+#main__nav a:hover {
+  color: #737530;
+}
+
+
+header {
+  background-image: url("/cocktail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 1vw 6vw rgba(0, 0, 0, 0.3);
+  height: 20vh;
+}
+
+main {
+  background-color: #eee;
+  height: 70vh;
+  overflow: auto; /* Browser überprüft welcher  Scrollbalken benötigt wird */
+
+}
+
+main > :last-child {
+  margin-bottom: 5vh;
+}
+
+footer {
+  background-color: #e7e7e7;
+  /* #cbebb5 */
+  height: 10vh;
 }
